@@ -1,0 +1,146 @@
+{
+  "timestamp": "2025-09-01T22:10:37.101322",
+  "total_findings": 12,
+  "findings": [
+    {
+      "line_number": 2,
+      "timestamp": "2025-09-01 21:31:22",
+      "category": "failed_login",
+      "pattern": "Failed login|Authentication failed|Login failed|Invalid user",
+      "line": "2025-09-01 21:31:22 [ERROR] Failed login attempt - user: admin, IP: 192.168.1.100",
+      "severity": "Medium",
+      "ips": [
+        "192.168.1.100"
+      ]
+    },
+    {
+      "line_number": 3,
+      "timestamp": "2025-09-01 21:31:45",
+      "category": "failed_login",
+      "pattern": "Failed login|Authentication failed|Login failed|Invalid user",
+      "line": "2025-09-01 21:31:45 [ERROR] Failed login attempt - user: administrator, IP: 192.168.1.100",
+      "severity": "Medium",
+      "ips": [
+        "192.168.1.100"
+      ]
+    },
+    {
+      "line_number": 3,
+      "timestamp": "2025-09-01 21:31:45",
+      "category": "privilege_escalation",
+      "pattern": "sudo|su |elevation|privilege|administrator|root access",
+      "line": "2025-09-01 21:31:45 [ERROR] Failed login attempt - user: administrator, IP: 192.168.1.100",
+      "severity": "High",
+      "ips": [
+        "192.168.1.100"
+      ]
+    },
+    {
+      "line_number": 4,
+      "timestamp": "2025-09-01 21:32:10",
+      "category": "failed_login",
+      "pattern": "Failed login|Authentication failed|Login failed|Invalid user",
+      "line": "2025-09-01 21:32:10 [ERROR] Failed login attempt - user: root, IP: 192.168.1.100",
+      "severity": "Medium",
+      "ips": [
+        "192.168.1.100"
+      ]
+    },
+    {
+      "line_number": 5,
+      "timestamp": "2025-09-01 21:32:33",
+      "category": "failed_login",
+      "pattern": "Failed login|Authentication failed|Login failed|Invalid user",
+      "line": "2025-09-01 21:32:33 [WARNING] Multiple failed login attempts detected from IP: 192.168.1.100",
+      "severity": "Medium",
+      "ips": [
+        "192.168.1.100"
+      ]
+    },
+    {
+      "line_number": 5,
+      "timestamp": "2025-09-01 21:32:33",
+      "category": "brute_force",
+      "pattern": "Multiple failed login attempts",
+      "line": "2025-09-01 21:32:33 [WARNING] Multiple failed login attempts detected from IP: 192.168.1.100",
+      "severity": "High",
+      "ips": [
+        "192.168.1.100"
+      ]
+    },
+    {
+      "line_number": 6,
+      "timestamp": "2025-09-01 21:35:12",
+      "category": "privilege_escalation",
+      "pattern": "sudo|su |elevation|privilege|administrator|root access",
+      "line": "2025-09-01 21:35:12 [INFO] sudo command executed - user: john.doe, command: su -",
+      "severity": "High",
+      "ips": []
+    },
+    {
+      "line_number": 7,
+      "timestamp": "2025-09-01 21:36:45",
+      "category": "malware_indicators",
+      "pattern": "virus|malware|trojan|backdoor|rootkit",
+      "line": "2025-09-01 21:36:45 [WARNING] Suspicious file detected: malware.exe quarantined",
+      "severity": "High",
+      "ips": []
+    },
+    {
+      "line_number": 8,
+      "timestamp": "2025-09-01 21:40:22",
+      "category": "network_attacks",
+      "pattern": "port scan|network scan|reconnaissance",
+      "line": "2025-09-01 21:40:22 [ERROR] Port scan detected from IP: 203.0.113.45",
+      "severity": "High",
+      "ips": [
+        "203.0.113.45"
+      ]
+    },
+    {
+      "line_number": 9,
+      "timestamp": "2025-09-01 21:41:15",
+      "category": "suspicious_network",
+      "pattern": "blocked connection|firewall deny",
+      "line": "2025-09-01 21:41:15 [INFO] Firewall blocked connection from IP: 203.0.113.45 to port 445",
+      "severity": "Medium",
+      "ips": [
+        "203.0.113.45"
+      ]
+    },
+    {
+      "line_number": 10,
+      "timestamp": "2025-09-01 21:45:30",
+      "category": "failed_login",
+      "pattern": "Failed login|Authentication failed|Login failed|Invalid user",
+      "line": "2025-09-01 21:45:30 [ERROR] Authentication failed - user: guest, IP: 10.0.0.25",
+      "severity": "Medium",
+      "ips": [
+        "10.0.0.25"
+      ]
+    },
+    {
+      "line_number": 12,
+      "timestamp": "2025-09-01 21:55:42",
+      "category": "failed_login",
+      "pattern": "Failed login|Authentication failed|Login failed|Invalid user",
+      "line": "2025-09-01 21:55:42 [ERROR] Failed login attempt - user: admin, IP: 192.168.1.75",
+      "severity": "Medium",
+      "ips": [
+        "192.168.1.75"
+      ]
+    }
+  ],
+  "ip_activity": {
+    "192.168.1.50": 1,
+    "192.168.1.100": 4,
+    "203.0.113.45": 2,
+    "10.0.0.25": 1,
+    "192.168.1.75": 1
+  },
+  "failed_logins": {
+    "192.168.1.100": 4,
+    "10.0.0.25": 1,
+    "192.168.1.75": 1
+  }
+}

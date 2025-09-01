@@ -1,0 +1,12 @@
+2025-09-01 21:30:15 [INFO] User login successful - user: john.doe, IP: 192.168.1.50
+2025-09-01 21:31:22 [ERROR] Failed login attempt - user: admin, IP: 192.168.1.100
+2025-09-01 21:31:45 [ERROR] Failed login attempt - user: administrator, IP: 192.168.1.100
+2025-09-01 21:32:10 [ERROR] Failed login attempt - user: root, IP: 192.168.1.100
+2025-09-01 21:32:33 [WARNING] Multiple failed login attempts detected from IP: 192.168.1.100
+2025-09-01 21:35:12 [INFO] sudo command executed - user: john.doe, command: su -
+2025-09-01 21:36:45 [WARNING] Suspicious file detected: malware.exe quarantined
+2025-09-01 21:40:22 [ERROR] Port scan detected from IP: 203.0.113.45
+2025-09-01 21:41:15 [INFO] Firewall blocked connection from IP: 203.0.113.45 to port 445
+2025-09-01 21:45:30 [ERROR] Authentication failed - user: guest, IP: 10.0.0.25
+2025-09-01 21:50:18 [WARNING] Unusual network traffic detected - bandwidth spike
+2025-09-01 21:55:42 [ERROR] Failed login attempt - user: admin, IP: 192.168.1.75

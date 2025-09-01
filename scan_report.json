@@ -1,0 +1,20 @@
+{
+  "ports": {
+    "127.0.0.1": {
+      "hostname": "Vivobook",
+      "state": "up",
+      "ports": [
+        {
+          "port": 135,
+          "state": "open",
+          "service": "epmap"
+        },
+        {
+          "port": 445,
+          "state": "open",
+          "service": "microsoft-ds"
+        }
+      ]
+    }
+  }
+}
